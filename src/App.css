@@ -1,0 +1,135 @@
+body {
+    background: #121212; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0; 
+}
+
+.main {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.searchInput {
+    display: block;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 2px #bb86fc84; 
+    background-color: #1F1B24; 
+    color: #E0E0E0; 
+    margin: auto;
+    padding: 0px 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.searchInput:focus {
+    background-color: #2C2C2C; 
+    border-color: #BB86FC; 
+    outline: none; 
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.event {
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    background-color: #1F1B24; 
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.tickets {
+    display: flex;
+    justify-content: space-around;
+}
+
+.event button {
+    position: absolute;
+    background-color: #BB86FC; 
+    border: 0;
+    width: 50%;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #121212; 
+    cursor: pointer;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.event h2 {
+    color: #BB86FC; 
+}
+
+.event p {
+    color: #E0E0E0; 
+    font-size: 25px;
+}
+
+.lastEvents {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.loading {
+    width: 100%;
+}
+
+.loading img {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.eventButtonContent{
+    width: 50px;
+    position: absolute;
+    width: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.authButton{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #BB86FC; 
+    border: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #121212; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.authentication{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.authenticationTitle{
+    font-weight: bold;
+}
