@@ -27,5 +27,7 @@ export const PrivateRoute = ({ children }) => {
     return <div>Loading...</div>; 
   }
 
-  return children;
+  if(user){
+    return children;
+  }
 };
