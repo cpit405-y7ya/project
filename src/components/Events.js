@@ -1,9 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import {  useEffect } from "react";
 import EventItem from "./Eventitem";
 import {useEvent} from '../context/context'
 
 function Events() {
-  const {events, setEvents, appendEvent, loading, setLoading} = useEvent();
+  const {events, setEvents, loading, setLoading} = useEvent();
   useEffect(()=>{
     (async function (){
         setLoading(true)
@@ -28,7 +28,7 @@ function Events() {
       }
       setEvents(eventData)
     }
-  },[])
+  },[setEvents,setLoading])
 
   return (
     <>
@@ -36,7 +36,7 @@ function Events() {
         <div className="loading">
             
         </div>
-        {loading?<div className="loading"><img  src="media/bouncing-circles.svg" /></div>:
+        {loading?<div className="loading"><img  src="media/bouncing-circles.svg" alt="loading" /></div>:
         <div className="lastEvents">
           {events.map((event, index) => (
             <EventItem key={index} event={event} />

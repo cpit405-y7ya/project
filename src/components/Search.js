@@ -3,7 +3,7 @@ import { useEvent } from "../context/context";
 import toast from "react-hot-toast";
 
 function Search() {
-  const { events, setEvents, appendEvent } = useEvent();
+  const { appendEvent } = useEvent();
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (e) => {
@@ -35,7 +35,7 @@ function Search() {
         />
         {loading && (
           <div className="loading">
-            <img src="media/bouncing-circles.svg" />
+            <img src="media/bouncing-circles.svg" alt="loading" />
           </div>
         )}
       </div>
